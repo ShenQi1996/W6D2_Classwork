@@ -111,6 +111,7 @@ class MetaCorgiSnacks
 
   def method_missing(name, *args)
     # Your code goes here...
+    name.send(args)
   end
 
 
